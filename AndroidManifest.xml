@@ -63,6 +63,10 @@
             android:name=".ReplyOptionsActivity"
             android:theme="@style/Theme.Sherlock.Light" >
         </activity>
+        <activity
+            android:name=".DeliveryMethodsActivity"
+            android:theme="@style/Theme.Sherlock.Light" >
+        </activity>
         
         
     </application>

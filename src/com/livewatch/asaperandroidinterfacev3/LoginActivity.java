@@ -38,7 +38,7 @@ public class LoginActivity extends Activity {
 	    startActivity(intent);
 	}
 
-	@Override
+	/*@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
 		case android.R.id.home:
@@ -53,6 +53,6 @@ public class LoginActivity extends Activity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
-	}
+	}*/
 
 }
