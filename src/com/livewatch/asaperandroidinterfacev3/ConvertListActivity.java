@@ -8,6 +8,7 @@ import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.app.SherlockActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuInflater;
+import com.actionbarsherlock.view.MenuItem;
 
 public class ConvertListActivity extends SherlockActivity {
 
@@ -19,7 +20,11 @@ public class ConvertListActivity extends SherlockActivity {
         
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM); 
 		getSupportActionBar().setCustomView(R.layout.convertlist_menu);
-
+		
+		getSupportActionBar().setIcon(R.drawable.back_blue_arrow2x );
+        getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+		
     }
  
     // note that these are actionbarsherlock.view.Menu objects that are
@@ -30,9 +35,21 @@ public class ConvertListActivity extends SherlockActivity {
     	MenuInflater inflater = getSupportMenuInflater();
         inflater.inflate(R.menu.main, menu);
         return super.onCreateOptionsMenu(menu);
- 
    
     }
+    
+    @Override
+    public boolean onOptionsItemSelected(MenuItem menuItem) {
+        switch (menuItem.getItemId()) {
+        case android.R.id.home:
+          Intent homeIntent = new Intent(this, Messages.class);
+          homeIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+          startActivity(homeIntent);
+        }
+      return (super.onOptionsItemSelected(menuItem));
+
+    }
+
     
     /*@Override
     public boolean onOptionsItemSelected(MenuItem item) {

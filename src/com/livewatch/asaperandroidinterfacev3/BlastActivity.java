@@ -139,8 +139,27 @@ public class BlastActivity extends SherlockFragmentActivity {
         return true;
     }
     
- 
     @Override
+    public boolean onOptionsItemSelected(MenuItem menuItem) {
+        switch (menuItem.getItemId()) {
+        case android.R.id.home:
+          Intent homeIntent = new Intent(this, Messages.class);
+          homeIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+          startActivity(homeIntent);
+          break;
+        case R.id.blue_manage_blast_button:
+        	if (mDrawerLayout.isDrawerOpen(mDrawerList)) {
+                mDrawerLayout.closeDrawer(mDrawerList);
+            } else {
+                mDrawerLayout.openDrawer(mDrawerList);
+            }
+        }
+      return (super.onOptionsItemSelected(menuItem));
+
+    }
+ 
+ 
+    /*@Override
     public boolean onOptionsItemSelected(MenuItem item) {
  
         if (item.getItemId() == R.id.blue_manage_blast_button) {
@@ -153,7 +172,7 @@ public class BlastActivity extends SherlockFragmentActivity {
         }
  
         return super.onOptionsItemSelected(item);
-    }
+    }*/
  
     // The click listener for ListView in the navigation drawer
     private class DrawerItemClickListener implements

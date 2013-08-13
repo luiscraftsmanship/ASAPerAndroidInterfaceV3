@@ -23,6 +23,11 @@ public class CreateProfileActivity extends SherlockActivity {
         
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM); 
 		getSupportActionBar().setCustomView(R.layout.create_profile_menu);
+		
+		getSupportActionBar().setIcon(R.drawable.back_blue_arrow2x );
+        getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+		
     }
  
     // note that these are actionbarsherlock.view.Menu objects that are
@@ -33,10 +38,20 @@ public class CreateProfileActivity extends SherlockActivity {
     	MenuInflater inflater = getSupportMenuInflater();
         inflater.inflate(R.menu.main, menu);
         return super.onCreateOptionsMenu(menu);
- 
-   
+  
     }
     
+    @Override
+    public boolean onOptionsItemSelected(MenuItem menuItem) {
+        switch (menuItem.getItemId()) {
+        case android.R.id.home:
+          Intent homeIntent = new Intent(this, MainActivity.class);
+          homeIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+          startActivity(homeIntent);
+        }
+      return (super.onOptionsItemSelected(menuItem));
+
+    }
         
     public void clickButtonHome(View view) {
 	    Intent intent = new Intent(this, Messages.class);

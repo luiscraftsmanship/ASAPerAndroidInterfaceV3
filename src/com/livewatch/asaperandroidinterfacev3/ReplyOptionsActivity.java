@@ -26,6 +26,11 @@ public class ReplyOptionsActivity extends SherlockActivity {
         
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM); 
 		getSupportActionBar().setCustomView(R.layout.reply_options_menu);
+		
+		getSupportActionBar().setIcon(R.drawable.back_blue_arrow2x );
+        getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+		
 	    
     }
  
@@ -38,6 +43,19 @@ public class ReplyOptionsActivity extends SherlockActivity {
         inflater.inflate(R.menu.main, menu);
         return super.onCreateOptionsMenu(menu);
     }
+    
+    @Override
+    public boolean onOptionsItemSelected(MenuItem menuItem) {
+        switch (menuItem.getItemId()) {
+        case android.R.id.home:
+          Intent homeIntent = new Intent(this, NewBlastActivity.class);
+          homeIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+          startActivity(homeIntent);
+        }
+      return (super.onOptionsItemSelected(menuItem));
+
+    }
+
     
     
     public void clickButtonNext(View view) {

@@ -26,6 +26,10 @@ public class DeliveryMethodsActivity extends SherlockActivity {
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM); 
 		getSupportActionBar().setCustomView(R.layout.delivery_methods_menu);
         
+		getSupportActionBar().setIcon(R.drawable.back_blue_arrow2x );
+        getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+		
     }
  
     // note that these are actionbarsherlock.view.Menu objects that are
@@ -38,6 +42,19 @@ public class DeliveryMethodsActivity extends SherlockActivity {
         return super.onCreateOptionsMenu(menu);
  
     }
+    
+    @Override
+    public boolean onOptionsItemSelected(MenuItem menuItem) {
+        switch (menuItem.getItemId()) {
+        case android.R.id.home:
+          Intent homeIntent = new Intent(this, NewBlastActivity.class);
+          homeIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+          startActivity(homeIntent);
+        }
+      return (super.onOptionsItemSelected(menuItem));
+
+    }
+
     
     
     public void clickButtonNext(View view) {

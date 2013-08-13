@@ -26,7 +26,24 @@ public class PreviewActivity extends SherlockActivity {
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM); 
 		getSupportActionBar().setCustomView(R.layout.preview_menu);
 		
+		getSupportActionBar().setIcon(R.drawable.back_blue_arrow2x );
+        getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+		
     }
+	
+	@Override
+    public boolean onOptionsItemSelected(MenuItem menuItem) {
+        switch (menuItem.getItemId()) {
+        case android.R.id.home:
+          Intent homeIntent = new Intent(this, NewBlastActivity.class);
+          homeIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+          startActivity(homeIntent);
+        }
+      return (super.onOptionsItemSelected(menuItem));
+
+    }
+
  
     // note that these are actionbarsherlock.view.Menu objects that are
     // created in this method.

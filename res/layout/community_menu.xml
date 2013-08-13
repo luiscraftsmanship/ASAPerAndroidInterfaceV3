@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content" >
     
-    <Button
+   <!-- <Button
         android:id="@+id/buttonHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -13,7 +13,7 @@
         android:background="@drawable/back_blue_arrow2x"
         android:onClick="clickButtonHome" />
 
-    <!-- Centered text -->
+     Centered text -->
     <TextView
         android:id="@+id/add_actionbar_text"
         android:layout_width="wrap_content"
@@ -21,7 +21,8 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:text="Community"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:paddingRight="20dp" />
 
     <!-- Cancel button -->
     <Button
@@ -31,6 +32,7 @@
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
         android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
         android:background="@drawable/respond_button_background"
         android:text="Blast"
         android:textColor="#fff"

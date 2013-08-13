@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content" >
     
-    <Button
+   <!-- <Button
         android:id="@+id/buttonHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -13,7 +13,7 @@
         android:background="@drawable/back_blue_arrow2x"
         android:onClick="clickButtonHome" />
 
-    <!-- Centered text -->
+     Centered text -->
     <TextView
         android:id="@+id/add_actionbar_text"
         android:layout_width="wrap_content"
