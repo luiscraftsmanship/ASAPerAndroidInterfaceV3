@@ -23,8 +23,6 @@ public class CreateProfileActivity extends SherlockActivity {
         
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM); 
 		getSupportActionBar().setCustomView(R.layout.create_profile_menu);
-		
-
     }
  
     // note that these are actionbarsherlock.view.Menu objects that are
@@ -41,8 +39,8 @@ public class CreateProfileActivity extends SherlockActivity {
     
         
     public void clickButtonHome(View view) {
-	    //Intent intent = new Intent(this, Messages.class);
-	    //startActivity(intent);
+	    Intent intent = new Intent(this, Messages.class);
+	    startActivity(intent);
 	}
  
 }

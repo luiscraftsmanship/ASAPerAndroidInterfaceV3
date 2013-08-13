@@ -31,6 +31,11 @@
             android:name=".LoginActivity"
             android:theme="@style/Theme.Sherlock.Light" >
         </activity>
+        <activity
+            android:name=".Messages"
+            android:theme="@style/Theme.Sherlock.Light" >
+        </activity>
+        
         
     </application>
 
