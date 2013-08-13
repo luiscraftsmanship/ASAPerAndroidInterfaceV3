@@ -55,6 +55,10 @@
             android:name=".BlastActivity"
             android:theme="@style/Theme.Sherlock.Light" >
         </activity>
+        <activity
+            android:name=".NewBlastActivity"
+            android:theme="@style/Theme.Sherlock.Light" >
+        </activity>
         
         
     </application>

@@ -139,7 +139,6 @@ public class BlastActivity extends SherlockFragmentActivity {
         return true;
     }
     
-  
  
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -175,11 +174,10 @@ public class BlastActivity extends SherlockFragmentActivity {
             ft.replace(R.id.content_frame, award_blast);
             break;
         case 1:
-        	//ft.replace(R.id.content_frame, add_recipient);
-        	/*Intent prefIntent = new Intent(BlastActivity.this,
+        	Intent prefIntent = new Intent(BlastActivity.this,
                     NewBlastActivity.class);
 
-            BlastActivity.this.startActivity(prefIntent);*/
+            BlastActivity.this.startActivity(prefIntent);
             break;
         case 2:
             ft.replace(R.id.content_frame, delete_recipient);
