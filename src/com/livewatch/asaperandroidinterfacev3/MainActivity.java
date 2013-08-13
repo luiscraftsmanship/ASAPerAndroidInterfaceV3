@@ -15,8 +15,6 @@ import android.widget.ScrollView;
 
 public class MainActivity extends Activity {
 	
-	//private float mx, my;
-    //private float curX, curY;
 	
 	private ScrollView vScroll;
     private HorizontalScrollView hScroll;
@@ -26,8 +24,6 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.welcome_layout);
 		
-		 //vScroll = (ScrollView) findViewById(R.id.vScroll);
-	     //hScroll = (HorizontalScrollView) findViewById(R.id.hScroll);
 	        
 	}
 
@@ -45,8 +41,8 @@ public class MainActivity extends Activity {
 	}
 	
 	public void sendViewProfile(View view) {
-	    //Intent intent = new Intent(this, CreateProfileActivity.class);
-	    //startActivity(intent);
+	    Intent intent = new Intent(this, CreateProfileActivity.class);
+	    startActivity(intent);
 	}
 	
 
