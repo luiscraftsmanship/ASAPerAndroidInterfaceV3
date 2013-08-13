@@ -392,11 +392,11 @@ int id abs__submit_area 0x7f04002f
 int id abs__textButton 0x7f040013
 int id abs__title 0x7f04001b
 int id abs__up 0x7f04000b
-int id action_settings 0x7f04006a
+int id action_settings 0x7f04006c
 int id add_actionbar_text 0x7f040036
 int id asapertextview 0x7f04005a
 int id assoonaspossibletextview 0x7f04005b
-int id blue_manage_blast_button 0x7f040069
+int id blue_manage_blast_button 0x7f04006b
 int id bottom_write_bar 0x7f040037
 int id buttonBlastHome 0x7f040053
 int id buttonDone 0x7f040043
@@ -412,7 +412,7 @@ int id imageButton1 0x7f04005c
 int id imageButton10 0x7f04005d
 int id imageButton11 0x7f04005e
 int id imageButton12 0x7f04005f
-int id imageButton2 0x7f040068
+int id imageButton2 0x7f04006a
 int id imageSendViewDeliveryMethods 0x7f040066
 int id imageView1 0x7f040039
 int id imageView2 0x7f04003d
@@ -424,7 +424,7 @@ int id inputSearch 0x7f040045
 int id left_drawer 0x7f040035
 int id listMode 0x7f040002
 int id listView1 0x7f040034
-int id message_text 0x7f040067
+int id message_text 0x7f040069
 int id normal 0x7f040001
 int id relativeLayout1 0x7f040044
 int id relativeLayout2 0x7f040046
@@ -448,6 +448,8 @@ int id textView4 0x7f04003e
 int id textView41 0x7f040064
 int id textView42 0x7f040065
 int id textView5 0x7f040049
+int id textView51 0x7f040067
+int id textView52 0x7f040068
 int id textView6 0x7f04004a
 int id textView7 0x7f04004b
 int id textView8 0x7f04004c
@@ -507,10 +509,12 @@ int layout listview_item_row 0x7f03002c
 int layout login_layout 0x7f03002d
 int layout new_blast_layout 0x7f03002e
 int layout new_blast_menu 0x7f03002f
-int layout sherlock_spinner_dropdown_item 0x7f030030
-int layout sherlock_spinner_item 0x7f030031
-int layout sms_row_chat 0x7f030032
-int layout welcome_layout 0x7f030033
+int layout reply_options_layout 0x7f030030
+int layout reply_options_menu 0x7f030031
+int layout sherlock_spinner_dropdown_item 0x7f030032
+int layout sherlock_spinner_item 0x7f030033
+int layout sms_row_chat 0x7f030034
+int layout welcome_layout 0x7f030035
 int menu blast_menu 0x7f0b0000
 int menu main 0x7f0b0001
 int string Fragment1 0x7f090026

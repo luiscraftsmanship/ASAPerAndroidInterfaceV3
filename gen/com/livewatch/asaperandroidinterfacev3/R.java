@@ -1063,11 +1063,11 @@ containing a value of this type.
         public static final int abs__textButton=0x7f040013;
         public static final int abs__title=0x7f04001b;
         public static final int abs__up=0x7f04000b;
-        public static final int action_settings=0x7f04006a;
+        public static final int action_settings=0x7f04006c;
         public static final int add_actionbar_text=0x7f040036;
         public static final int asapertextview=0x7f04005a;
         public static final int assoonaspossibletextview=0x7f04005b;
-        public static final int blue_manage_blast_button=0x7f040069;
+        public static final int blue_manage_blast_button=0x7f04006b;
         public static final int bottom_write_bar=0x7f040037;
         public static final int buttonBlastHome=0x7f040053;
         public static final int buttonDone=0x7f040043;
@@ -1083,7 +1083,7 @@ containing a value of this type.
         public static final int imageButton10=0x7f04005d;
         public static final int imageButton11=0x7f04005e;
         public static final int imageButton12=0x7f04005f;
-        public static final int imageButton2=0x7f040068;
+        public static final int imageButton2=0x7f04006a;
         public static final int imageSendViewDeliveryMethods=0x7f040066;
         public static final int imageView1=0x7f040039;
         public static final int imageView2=0x7f04003d;
@@ -1095,7 +1095,7 @@ containing a value of this type.
         public static final int left_drawer=0x7f040035;
         public static final int listMode=0x7f040002;
         public static final int listView1=0x7f040034;
-        public static final int message_text=0x7f040067;
+        public static final int message_text=0x7f040069;
         public static final int normal=0x7f040001;
         public static final int relativeLayout1=0x7f040044;
         public static final int relativeLayout2=0x7f040046;
@@ -1119,6 +1119,8 @@ containing a value of this type.
         public static final int textView41=0x7f040064;
         public static final int textView42=0x7f040065;
         public static final int textView5=0x7f040049;
+        public static final int textView51=0x7f040067;
+        public static final int textView52=0x7f040068;
         public static final int textView6=0x7f04004a;
         public static final int textView7=0x7f04004b;
         public static final int textView8=0x7f04004c;
@@ -1182,10 +1184,12 @@ containing a value of this type.
         public static final int login_layout=0x7f03002d;
         public static final int new_blast_layout=0x7f03002e;
         public static final int new_blast_menu=0x7f03002f;
-        public static final int sherlock_spinner_dropdown_item=0x7f030030;
-        public static final int sherlock_spinner_item=0x7f030031;
-        public static final int sms_row_chat=0x7f030032;
-        public static final int welcome_layout=0x7f030033;
+        public static final int reply_options_layout=0x7f030030;
+        public static final int reply_options_menu=0x7f030031;
+        public static final int sherlock_spinner_dropdown_item=0x7f030032;
+        public static final int sherlock_spinner_item=0x7f030033;
+        public static final int sms_row_chat=0x7f030034;
+        public static final int welcome_layout=0x7f030035;
     }
     public static final class menu {
         public static final int blast_menu=0x7f0b0000;

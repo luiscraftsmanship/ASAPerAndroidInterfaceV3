@@ -34,8 +34,8 @@ public class LoginActivity extends Activity {
 	}
 	
 	public void sendHomeView(View view) {
-	    //Intent intent = new Intent(this, Messages.class);
-	    //startActivity(intent);
+	    Intent intent = new Intent(this, Messages.class);
+	    startActivity(intent);
 	}
 
 	@Override
