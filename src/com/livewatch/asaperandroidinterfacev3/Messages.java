@@ -208,15 +208,11 @@ public class Messages extends SherlockFragmentActivity {
 			super.onResume();			
 	}
 		
-		public void clickButtonBlast(View view) {
-		    //Intent intent = new Intent(this, BlastActivity.class);
-		    //startActivity(intent);
-		}
+		/*public void clickButtonBlast(View view) {
+		    Intent intent = new Intent(this, BlastActivity.class);
+		    startActivity(intent);
+		}*/
 		
-		//public void sendMessage(View view) {
-		    //Intent intent = new Intent(this, MessageChatActivity.class);
-		    //startActivity(intent);
-		//}
 		
 		@Override
 		public boolean onOptionsItemSelected(MenuItem item) {
@@ -261,19 +257,17 @@ public class Messages extends SherlockFragmentActivity {
 
 				break;
 			case 3:
-				//ft.replace(R.id.content_frame, fragment3);
-				/*Intent prefIntent3 = new Intent(Messages.this,
+				Intent prefIntent3 = new Intent(Messages.this,
 	                    ContactsActivity.class);
 
-	            Messages.this.startActivity(prefIntent3);*/
+	            Messages.this.startActivity(prefIntent3);
 
 				break;
 			case 4:
-				//ft.replace(R.id.content_frame, fragment3);
-				/*Intent prefIntent4 = new Intent(Messages.this,
+				Intent prefIntent4 = new Intent(Messages.this,
 	                    ConvertListActivity.class);
 
-	            Messages.this.startActivity(prefIntent4);*/
+	            Messages.this.startActivity(prefIntent4);
 
 				break;
 			}
