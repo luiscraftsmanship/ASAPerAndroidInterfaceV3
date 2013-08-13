@@ -1,0 +1,276 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content">
+
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="horizontal"
+    android:layout_marginBottom="20dp"
+    android:paddingBottom="20dp"
+    android:scrollbarAlwaysDrawHorizontalTrack="true" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF444444" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="22dp"
+            android:paddingBottom="22dp"
+            android:src="@drawable/community_group_image2x" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imageView1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="22dp"
+            android:text="Chicago Bears Fan Club"
+            android:textSize="16sp"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_toRightOf="@+id/imageView1"
+            android:layout_marginLeft="10dp"
+            android:text="10k + Members"
+            android:textSize="10sp"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_toRightOf="@+id/imageView1"
+            android:layout_marginLeft="10dp"
+            android:text="The official channel for all things Bears"
+            android:textSize="11sp"
+            android:textColor="#fff" />
+        
+    </RelativeLayout>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:layout_marginLeft="140sp"
+            android:background="@drawable/send_button"
+            android:onClick="sendMessage"
+            android:paddingBottom="7sp"
+            android:paddingLeft="15sp"
+            android:paddingRight="15sp"
+            android:paddingTop="7sp"
+            android:text="Invite new contact"
+            android:textColor="#FFF"
+             />
+    
+    <View
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:background="@android:color/darker_gray"
+    android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="19dp"
+            android:src="@drawable/profileimagedefault" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView2"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/imageView2"
+            android:text="Bill Murray" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_centerVertical="true"
+            android:src="@drawable/sms_chat_gray_icon" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView3"
+            android:src="@drawable/voice_chat_gray_icon"
+            android:layout_marginLeft="8dp" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="18dp"
+            android:src="@drawable/disclosure_indicator2x" />
+
+    </RelativeLayout>
+    
+    <View
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:background="@android:color/darker_gray"
+    android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5sp"/>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="19dp"
+            android:src="@drawable/profileimagedefault" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView2"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/imageView2"
+            android:text="Dan Aykroyd" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_centerVertical="true"
+            android:src="@drawable/asaper_chat_gray_icon" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView3"
+            android:src="@drawable/email_chat_gray_icon"
+            android:layout_marginLeft="8dp" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="18dp"
+            android:src="@drawable/disclosure_indicator2x" />
+
+    </RelativeLayout>
+    
+    <View
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:background="@android:color/darker_gray"
+    android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5sp"/>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="19dp"
+            android:src="@drawable/profileimagedefault" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView2"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/imageView2"
+            android:text="Harold Ramis" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_centerVertical="true"
+            android:src="@drawable/asaper_chat_gray_icon" />
+
+        
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="18dp"
+            android:src="@drawable/disclosure_indicator2x" />
+
+    </RelativeLayout>
+    
+    <View
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:background="@android:color/darker_gray"
+    android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5sp"/>
+
+</LinearLayout>
+
+</ScrollView>

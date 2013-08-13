@@ -86,7 +86,6 @@ public class Messages extends SherlockFragmentActivity {
 						title = new String[] { "Settings",
 								"Chat", 
 								"Community",
-								//"Groups",
 								"Contacts", 
 								"Convert to Club"};
 
@@ -255,11 +254,10 @@ public class Messages extends SherlockFragmentActivity {
 	            Messages.this.startActivity(prefIntent);
 				break;
 			case 2:
-				//ft.replace(R.id.content_frame, fragment3);
-				/*Intent prefIntent2 = new Intent(Messages.this,
+				Intent prefIntent2 = new Intent(Messages.this,
 	                    CommunityActivity.class);
 
-	            Messages.this.startActivity(prefIntent2);*/
+	            Messages.this.startActivity(prefIntent2);
 
 				break;
 			case 3:

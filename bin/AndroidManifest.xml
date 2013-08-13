@@ -39,6 +39,10 @@
             android:name=".MessageChatActivity"
             android:theme="@style/Theme.Sherlock.Light" >
         </activity>
+        <activity
+            android:name=".CommunityActivity"
+            android:theme="@style/Theme.Sherlock.Light" >
+        </activity>
         
         
     </application>
