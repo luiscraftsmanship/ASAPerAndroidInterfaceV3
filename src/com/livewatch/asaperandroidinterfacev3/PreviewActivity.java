@@ -15,17 +15,17 @@ import com.actionbarsherlock.view.MenuItem;
 import com.actionbarsherlock.view.MenuInflater;
 
 
-public class DeliveryMethodsActivity extends SherlockActivity {
+public class PreviewActivity extends SherlockActivity {
 
 	@Override
     public void onCreate(Bundle savedInstanceState) {
          
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.delivery_methods_layout);
+        setContentView(R.layout.preview_layout);
         
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM); 
-		getSupportActionBar().setCustomView(R.layout.delivery_methods_menu);
-        
+		getSupportActionBar().setCustomView(R.layout.preview_menu);
+		
     }
  
     // note that these are actionbarsherlock.view.Menu objects that are
@@ -36,12 +36,11 @@ public class DeliveryMethodsActivity extends SherlockActivity {
     	MenuInflater inflater = getSupportMenuInflater();
         inflater.inflate(R.menu.main, menu);
         return super.onCreateOptionsMenu(menu);
- 
     }
     
     
-    public void clickButtonNext(View view) {
-	    Intent intent = new Intent(this, PreviewActivity.class);
+    public void clickButtonSend(View view) {
+	    Intent intent = new Intent(this, Messages.class);
 	    startActivity(intent);
 	}
 

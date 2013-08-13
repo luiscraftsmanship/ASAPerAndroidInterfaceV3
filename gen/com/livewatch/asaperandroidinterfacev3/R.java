@@ -1188,12 +1188,14 @@ containing a value of this type.
         public static final int login_layout=0x7f03002f;
         public static final int new_blast_layout=0x7f030030;
         public static final int new_blast_menu=0x7f030031;
-        public static final int reply_options_layout=0x7f030032;
-        public static final int reply_options_menu=0x7f030033;
-        public static final int sherlock_spinner_dropdown_item=0x7f030034;
-        public static final int sherlock_spinner_item=0x7f030035;
-        public static final int sms_row_chat=0x7f030036;
-        public static final int welcome_layout=0x7f030037;
+        public static final int preview_layout=0x7f030032;
+        public static final int preview_menu=0x7f030033;
+        public static final int reply_options_layout=0x7f030034;
+        public static final int reply_options_menu=0x7f030035;
+        public static final int sherlock_spinner_dropdown_item=0x7f030036;
+        public static final int sherlock_spinner_item=0x7f030037;
+        public static final int sms_row_chat=0x7f030038;
+        public static final int welcome_layout=0x7f030039;
     }
     public static final class menu {
         public static final int blast_menu=0x7f0b0000;
