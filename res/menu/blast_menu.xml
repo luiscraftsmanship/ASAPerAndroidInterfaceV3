@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+ 
+    <item        
+        
+        android:id="@+id/blue_manage_blast_button"
+        android:icon="@drawable/manage_blast_button"
+        android:orderInCategory="100"
+        android:title="Manage Blast" 
+        android:showAsAction="always"
+         >   
+        
+ 	</item>
+ 	
+    
+</menu>

@@ -208,10 +208,10 @@ public class Messages extends SherlockFragmentActivity {
 			super.onResume();			
 	}
 		
-		/*public void clickButtonBlast(View view) {
+		public void clickButtonBlast(View view) {
 		    Intent intent = new Intent(this, BlastActivity.class);
 		    startActivity(intent);
-		}*/
+		}
 		
 		
 		@Override

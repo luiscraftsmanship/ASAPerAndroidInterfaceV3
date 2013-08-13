@@ -51,6 +51,10 @@
             android:name=".ConvertListActivity"
             android:theme="@style/Theme.Sherlock.Light" >
         </activity>
+        <activity
+            android:name=".BlastActivity"
+            android:theme="@style/Theme.Sherlock.Light" >
+        </activity>
         
         
     </application>
