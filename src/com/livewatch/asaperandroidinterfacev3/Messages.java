@@ -70,7 +70,6 @@ public class Messages extends SherlockFragmentActivity {
 			ActionBarDrawerToggle mDrawerToggle;
 			MenuListAdapterHome mMenuAdapter;
 			String[] title;
-			//String[] subtitle;
 			int[] icon;
 			Fragment fragment1 = new Fragment1();
 			Fragment fragment2 = new Fragment2();
@@ -91,9 +90,6 @@ public class Messages extends SherlockFragmentActivity {
 								"Contacts", 
 								"Convert to Club"};
 
-						// Generate subtitle
-						//subtitle = new String[] { "Subtitle Fragment 1", "Subtitle Fragment 2",
-							//	"Subtitle Fragment 3" };
 
 						// Generate icon
 						icon = new int[] { R.drawable.settings_icon2x,
@@ -203,12 +199,9 @@ public class Messages extends SherlockFragmentActivity {
 	    	
 	    	MenuInflater inflater = getSupportMenuInflater();
 	        inflater.inflate(R.menu.main, menu);
-	        return super.onCreateOptionsMenu(menu);
-	 
-	   
+	        return super.onCreateOptionsMenu(menu); 
 	    }
 		
-	
 		
 		@Override
 		protected void onResume() {
@@ -221,10 +214,10 @@ public class Messages extends SherlockFragmentActivity {
 		    //startActivity(intent);
 		}
 		
-		public void sendMessage(View view) {
+		//public void sendMessage(View view) {
 		    //Intent intent = new Intent(this, MessageChatActivity.class);
 		    //startActivity(intent);
-		}
+		//}
 		
 		@Override
 		public boolean onOptionsItemSelected(MenuItem item) {
@@ -252,21 +245,14 @@ public class Messages extends SherlockFragmentActivity {
 		}
 
 		private void selectItem(int position) {
-
-			//FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-			// Locate Position
 			switch (position) {
 			//case 0:
-				//ft.replace(R.id.content_frame, fragment1);
 				
 				//break;
 			case 1:
-				/*Intent prefIntent = new Intent(Messages.this,
+				Intent prefIntent = new Intent(Messages.this,
 	                    MessageChatActivity.class);
-
-	            Messages.this.startActivity(prefIntent);*/
-
-				//ft.replace(R.id.content_frame, fragment2);
+	            Messages.this.startActivity(prefIntent);
 				break;
 			case 2:
 				//ft.replace(R.id.content_frame, fragment3);
